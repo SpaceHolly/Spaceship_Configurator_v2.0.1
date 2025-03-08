@@ -133,8 +133,6 @@ namespace ShipConfigurator
 
 		private Label label2;
 
-		private IContainer components;
-
 		private TabPage tabPage13;
 
 		private Label label55;
@@ -800,15 +798,6 @@ namespace ShipConfigurator
 
 		private void label43_Click(object sender, EventArgs e)
 		{
-		}
-
-		protected override void Dispose(bool disposing)
-		{
-			if (disposing && components != null)
-			{
-				components.Dispose();
-			}
-			base.Dispose(disposing);
 		}
 
 		private void InitializeComponent()

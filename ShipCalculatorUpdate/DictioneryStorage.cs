@@ -243,11 +243,15 @@ namespace ShipCalculatorUpdate
 				(0, 1)
 			},
 			{
-				"Пулемёт",
+				"SGS-30 - Small Gun System",
 				(0, 1)
 			},
-			{
-				"Болтер",
+            {
+                "BGS-127 - Basic Gun System",
+                (0, 1)
+            },
+            {
+				"BMS-D - Bolter Mounted System",
 				(0, 2)
 			},
 			{
@@ -267,31 +271,31 @@ namespace ShipCalculatorUpdate
 				(0, 5)
 			},
 			{
-				"Пушка",
+				"MAC-152M - Medium Artillery Cannon",
 				(0, 3)
 			},
 			{
-				"Макропушка",
+				"BRG-90X - Battle Rail Gun",
 				(0, 5)
 			},
 			{
-				"Фрагмент. пушка",
+				"HBC-305A - Heavy Battle Cannon",
 				(0, 1)
 			},
 			{
-				"Автопушка",
+				"TAC-75B - Tactical Auto Cannon",
 				(0, 1)
 			},
 			{
-				"Лазер",
+				"MLP-55B - Multi-purpose Laser",
 				(4, 1)
 			},
 			{
-				"Плазмопушка",
+				"HPC-100 – High-Intensity Plasma Cannon",
 				(4, 3)
 			},
 			{
-				"Ионная пушка",
+				"IPC-70 – Ion Precision Cannon",
 				(4, 2)
 			},
 			{
@@ -299,68 +303,60 @@ namespace ShipCalculatorUpdate
 				(1, 1)
 			},
 			{
-				"Фотонная автопушка",
+				"LPI-36 - Light Photon Impulsor",
 				(3, 2)
 			},
 			{
-				"Фотонная пушка",
+				"PXL-72 - Photon X-ray Laser",
 				(1, 4)
 			},
 			{
-				"Фотонная баллиста",
+				"IPL-150 – Impulse Photon Howitzer",
 				(1, 6)
 			},
 			{
-				"Плазменная батарея",
+				"PLB-105 – Plasma Lance Battery",
 				(3, 2)
 			},
 			{
-				"Тесла",
+				"TDC-Ω – Tesla Discharge Cannon",
 				(4, 1)
 			},
 			{
-				"Молниевая пушка",
+				"TLC-500 – Tesla Lightning Cannon",
 				(4, 2)
 			},
 			{
-				"Гравицапа",
+				"Гравицапа 1990",
 				(4, 2)
 			},
 			{
-				"Рельсовая пушка",
-				(3, 1)
-			},
-			{
-				"Ион. пулемёт",
+				"IGG-620 – Ionized Gatling Gun",
 				(1, 1)
 			},
 			{
-				"Ускоритель частиц",
+				"MRL-07B - Miniature Rail Launcher",
 				(2, 2)
 			},
 			{
-				"Пушка гаусса",
+				"TRG-42M - Tactical Rail Gun",
 				(2, 1)
 			},
 			{
-				"Фазовая пушка",
+				"TLA-60 – Tactical Laser Accumulator",
 				(3, 1)
 			},
 			{
-				"Мельтаган",
+				"PLD-170 – Plasma Lance Disruptor",
 				(2, 3)
 			},
 			{
-				"Кин. ионный болтер",
+				"TIB-76HX – Tactical Ion Bolter",
 				(2, 2)
 			},
 			{
-				"Спинальное орудие",
+				"WH-40k - War Hammer",
 				(5, 9)
-			},
-			{
-				"Кин. торпедная уст.",
-				(3, 6)
 			}
 		};
 
@@ -535,20 +531,20 @@ namespace ShipCalculatorUpdate
 
 		public static Dictionary<string, int> ShieldsSize { get; } = new Dictionary<string, int>
 		{
-			{ "C", 5 },
-			{ "SSS", 10 },
-			{ "SS", 20 },
-			{ "S", 30 },
-			{ "M", 40 },
-			{ "L", 50 },
-			{ "VL", 60 },
-			{ "A", 70 },
-			{ "X", 80 },
-			{ "XL", 90 },
-			{ "XXL", 100 },
-			{ "XXXL", 110 },
-			{ "E", 120 },
-			{ "XE", 150 }
+			{ "C", 1 },
+			{ "SSS", 2 },
+			{ "SS", 3 },
+			{ "S", 4 },
+			{ "M", 5 },
+			{ "L", 6 },
+			{ "VL", 7 },
+			{ "A", 8 },
+			{ "X", 9 },
+			{ "XL", 10 },
+			{ "XXL", 11 },
+			{ "XXXL", 12 },
+			{ "E", 13 },
+			{ "XE", 15 }
 		};
 
 		public static Dictionary<string, double> ShieldsMod { get; } = new Dictionary<string, double>
@@ -1022,12 +1018,16 @@ namespace ShipCalculatorUpdate
 		public static Dictionary<string, (int Cost, bool LargeBase, bool ForwardOnly, bool MediumArm, bool HeavyArm, bool ExtremeArm)> Weapons { get; } = new Dictionary<string, (int, bool, bool, bool, bool, bool)>
 		{
 			{
-				"Пулемёт",
+				"SGS-30 - Small Gun System",
 				(10500, false, false, false, false, false)
 			},
-			{
-				"Болтер",
-				(12500, false, false, false, false, false)
+            {
+                "BGS-127 - Basic Gun System",
+                (3500, false, false, false, false, false)
+            },
+            {
+				"BMS-D - Bolter Mounted System",
+				(15500, false, false, false, false, false)
 			},
 			{
 				"Лёгк. ракетная уст.",
@@ -1043,34 +1043,34 @@ namespace ShipCalculatorUpdate
 			},
 			{
 				"Торпедная уст.",
-				(25000, true, true, true, true, false)
+				(35750, true, true, true, true, false)
 			},
 			{
-				"Пушка",
+				"MAC-152M - Medium Artillery Cannon",
 				(55000, false, false, true, false, false)
 			},
 			{
-				"Макропушка",
+				"BRG-90X - Battle Rail Gun",
 				(68650, true, false, true, true, true)
 			},
 			{
-				"Фрагмент. пушка",
-				(50925, true, true, true, true, false)
+				"HBC-305A - Heavy Battle Cannon",
+				(68650, true, true, true, true, false)
 			},
 			{
-				"Автопушка",
+				"TAC-75B - Tactical Auto Cannon",
 				(19650, false, false, true, false, false)
 			},
 			{
-				"Лазер",
+				"MLP-55B - Multi-purpose Laser",
 				(35000, false, false, false, false, false)
 			},
 			{
-				"Плазмопушка",
+				"HPC-100 – High-Intensity Plasma Cannon",
 				(45000, false, false, true, false, false)
 			},
 			{
-				"Ионная пушка",
+				"IPC-70 – Ion Precision Cannon",
 				(75000, false, false, true, false, false)
 			},
 			{
@@ -1078,68 +1078,60 @@ namespace ShipCalculatorUpdate
 				(82500, true, true, true, true, true)
 			},
 			{
-				"Фотонные автопушки",
+				"LPI-36 - Light Photon Impulsor",
 				(72250, false, false, true, false, false)
 			},
 			{
-				"Фотонная пушка",
+				"PXL-72 - Photon X-ray Laser",
 				(95000, false, false, true, true, false)
 			},
 			{
-				"Фотонная баллиста",
+				"IPL-150 – Impulse Photon Howitzer",
 				(120000, false, false, true, true, true)
 			},
 			{
-				"Плазменная батарея",
+				"PLB-105 – Plasma Lance Battery",
 				(50000, false, false, true, false, false)
 			},
 			{
-				"Тесла",
+				"TDC-Ω – Tesla Discharge Cannon",
 				(76500, false, false, true, false, false)
 			},
 			{
-				"Молниевая пушка",
+				"TLC-500 – Tesla Lightning Cannon",
 				(77800, true, false, true, true, false)
 			},
 			{
-				"Гравицапа",
-				(63550, true, true, true, true, false)
+				"Гравицапа 1990",
+				(83550, true, true, true, true, false)
 			},
 			{
-				"Рельсовая пушка",
-				(32500, true, false, true, false, false)
-			},
-			{
-				"Иониз. пулемёт",
+				"IGG-620 – Ionized Gatling Gun",
 				(17250, false, false, false, false, false)
 			},
 			{
-				"Ускоритель частиц",
+				"MRL-07B - Miniature Rail Launcher",
 				(22250, false, false, true, false, false)
 			},
 			{
-				"Пушка гаусса",
+				"TRG-42M - Tactical Rail Gun",
 				(35500, false, false, true, false, false)
 			},
 			{
-				"Фазовая пушка",
+				"TLA-60 – Tactical Laser Accumulator",
 				(35000, false, false, false, false, false)
 			},
 			{
-				"Мельтаган",
+				"PLD-170 – Plasma Lance Disruptor",
 				(33225, false, false, true, false, false)
 			},
 			{
-				"Кин. ионный болтер",
+				"TIB-76HX – Tactical Ion Bolter",
 				(51685, true, false, true, true, false)
 			},
 			{
-				"Спинальное орудие",
+				"WH-40k - War Hammer",
 				(89950, true, true, true, true, true)
-			},
-			{
-				"Кин. торпедная уст.",
-				(78250, true, true, true, true, true)
 			}
 		};
 

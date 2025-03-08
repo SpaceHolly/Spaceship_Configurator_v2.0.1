@@ -16,8 +16,6 @@ namespace ShipCalculatorUpdate
 	{
 		private int _maneuverEngineLevel;
 
-		private IContainer components;
-
 		private TabControl TabControl1;
 
 		private TabPage TabPage1;
@@ -1673,15 +1671,6 @@ namespace ShipCalculatorUpdate
 			}
 		}
 
-		protected override void Dispose(bool disposing)
-		{
-			if (disposing && components != null)
-			{
-				components.Dispose();
-			}
-			base.Dispose(disposing);
-		}
-
 		private void InitializeComponent()
 		{
             this.TabControl1 = new System.Windows.Forms.TabControl();
@@ -2071,6 +2060,7 @@ namespace ShipCalculatorUpdate
             // TurretWeapListBox
             // 
             this.TurretWeapListBox.FormattingEnabled = true;
+            this.TurretWeapListBox.HorizontalScrollbar = true;
             this.TurretWeapListBox.Location = new System.Drawing.Point(142, 32);
             this.TurretWeapListBox.Name = "TurretWeapListBox";
             this.TurretWeapListBox.Size = new System.Drawing.Size(139, 199);
@@ -2089,6 +2079,7 @@ namespace ShipCalculatorUpdate
             // FrontWeapListBox
             // 
             this.FrontWeapListBox.FormattingEnabled = true;
+            this.FrontWeapListBox.HorizontalScrollbar = true;
             this.FrontWeapListBox.Location = new System.Drawing.Point(0, 32);
             this.FrontWeapListBox.Name = "FrontWeapListBox";
             this.FrontWeapListBox.Size = new System.Drawing.Size(139, 199);
@@ -2188,6 +2179,7 @@ namespace ShipCalculatorUpdate
             // WeaponsListBox
             // 
             this.WeaponsListBox.FormattingEnabled = true;
+            this.WeaponsListBox.HorizontalScrollbar = true;
             this.WeaponsListBox.Location = new System.Drawing.Point(6, 21);
             this.WeaponsListBox.Name = "WeaponsListBox";
             this.WeaponsListBox.Size = new System.Drawing.Size(138, 381);

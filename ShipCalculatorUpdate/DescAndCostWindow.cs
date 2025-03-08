@@ -7,7 +7,6 @@ namespace ShipCalculatorUpdate
 {
 	public class DescAndCostWindow : Form
 	{
-		private IContainer components;
 
 		private TabPage tabPage3;
 
@@ -34,15 +33,6 @@ namespace ShipCalculatorUpdate
 
 		private void richTextBox2_TextChanged(object sender, EventArgs e)
 		{
-		}
-
-		protected override void Dispose(bool disposing)
-		{
-			if (disposing && components != null)
-			{
-				components.Dispose();
-			}
-			base.Dispose(disposing);
 		}
 
 		private void InitializeComponent()
